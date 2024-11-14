@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Juguetes</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #d8b9f1, #f8e2f6);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #6e52a3;
+        }
+    
+        .images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .images img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+        
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #6e52a3;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #e0c9f2;
+        }
+        
+        th img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        
+        .product-image {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        .form-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9e8fd;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container label, .form-container input, .form-container textarea {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .form-container input, .form-container textarea {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #6e52a3;
+        }
+        /* Hipervínculos en vertical */
+        .links {
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .links a {
+            color: #6e52a3;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        /* Estilo para ocultar el video */
+        #videoContainer {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function mostrarVideo() {
+            document.getElementById("videoContainer").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <h1>
+    <img src="logo.jpg" alt="Logo" style="width: 50px; vertical-align: middle; margin-right: 10px;">
+    TIENDA DE JUGUETES 
+</h1>
+
+    <p>Los juguetes existen desde la antigüedad y han sido esenciales para el desarrollo infantil. Civilizaciones antiguas ya usaban muñecas y figuras de arcilla, marcando el inicio de una herramienta de entretenimiento y aprendizaje.</p>
+
+    <li>TIPOS DE JUGUETES</li>
+
+    <p>Los juguetes abarcan una gran variedad de tipos, entre ellos:
+
+Muñecas y figuras de acción: ayudan en el desarrollo de habilidades sociales.
+
+Peluches: brindan confort emocional.
+
+Juegos de construcción: como bloques y rompecabezas, estimulan la creatividad y la lógica.
+
+Juegos de mesa: fomentan la cooperación y la competencia sana.
+
+Videojuegos y juguetes electrónicos: pueden desarrollar habilidades cognitivas y reflejos.
+
+
+Beneficios de los Juguetes en el Desarrollo
+
+Los juguetes contribuyen al desarrollo físico, social, y cognitivo. Ayudan a mejorar la motricidad, la creatividad y la capacidad para resolver problemas. También impulsan el trabajo en equipo y la expresión de emociones.</p>
+
+    <!-- Galería de imágenes -->
+    <div class="images">
+        <img src="imagen1.jpg" alt="Juguete 1">
+        <img src="imagen2.jpg" alt="Juguete 2">
+        <img src="imagen3.jpg" alt="Juguete 3">
+        <img src="imagen4.jpg" alt="Juguete 4">
+        <img src="imagen5.jpg" alt="Juguete 5">
+      
+
+        <li> EVOLUCION DE LOS JUUGUETES: En la actualidad, los juguetes incluyen tecnologías avanzadas como inteligencia artificial y realidad aumentada, ofreciendo experiencias interactivas más inmersivas. También hay un enfoque en juguetes inclusivos, que buscan representar diversidad en género, capacidades y cultura.</li>
+    
+        <li> SOSTENIBILIDAD Y SEGURIDAD: Hay una tendencia creciente hacia juguetes sostenibles, hechos con materiales ecológicos y seguros para los niños. Esto responde a una demanda social de productos respetuosos con el medio ambiente y no tóxicos. </li>
+       
+    </div>
+
+    <!-- Tabla de precios -->
+    <table>
+        <tr>
+            <th><img src="imagen6.jpg" alt="Icono de juguete"> Juguete</th>
+            <th><img src="imagen7.jpg" alt="Icono de edad"> Edad Recomendada</th>
+            <th><img src="imagen8.jpg" alt="Icono de precio"> Precio</th>
+        </tr>
+        <tr>
+            <td>
+                Muñeco Articulado
+                <br>
+                <img src="imagen9.jpg" alt="Imagen de Muñeco Articulado" class="product-image">
+            </td>
+            <td>3+</td>
+            <td>15.00 Bs</td>
+        </tr>
+        <tr>
+            <td>
+                Bloques de Construcción
+                <br>
+                <img src="imagen10.jpg" alt="Imagen de Bloques de Construcción" class="product-image">
+            </td>
+            <td>6+</td>
+            <td>25.00 Bs</td>
+        </tr>
+        <tr>
+            <td>
+                Rompecabezas
+                <br>
+                <img src="imagen11.jpg" alt="Imagen de Rompecabezas" class="product-image">
+            </td>
+            <td>4+</td>
+            <td>100.00 Bs</td>
+        </tr>
+        <tr>
+            <td>
+                Pelota Saltarina
+                <br>
+                <img src="imagen12.jpg" alt="Imagen de Pelota Saltarina" class="product-image">
+            </td>
+            <td>2+</td>
+            <td>55.00 Bs</td>
+        </tr>
+    </table>
+    
+        <p> JUGUETES INCLUSIVOS </p>
+    <p>Cada vez hay más juguetes diseñados para representar la diversidad de género, cultura y capacidades físicas, permitiendo a los niños identificarse y aprender sobre inclusión y respeto desde una edad temprana.
+
+En conjunto, los juguetes no solo entretienen, sino que también son herramientas fundamentales para el desarrollo integral de las personas. </p>
+
+    <!-- Botón para mostrar el video -->
+    <div style="text-align: center; margin: 20px;">
+        <a href="javascript:void(0);" onclick="mostrarVideo()">VER VIDEOS DE JUGUETES</a>
+    </div>
+
+    <!-- Contenedor del video oculto -->
+    <div id="videoContainer">
+        <video width="600" controls>
+            <source src="video1.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+
+    <!-- Formulario de contacto -->
+    <div class="form-container">
+        <h2>Contactanos</h2>
+        <form action="#" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name"required maxlength="10">
+            
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email"required maxlength="15">
+ 
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4"required maxlength="20">
+ </textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Hipervínculos en vertical -->
+    <div class="links">
+        <a href="https://www.tiendaejemplo.com/juguetes" target="_blank">Visita nuestra tienda</a>
+        <a href="https://www.blogejemplo.com" target="_blank">Lee nuestro blog</a>
+        <a href="https://www.contacto.com" target="_blank">Contáctanos</a>
+    </div>
+</body>
+</html>
